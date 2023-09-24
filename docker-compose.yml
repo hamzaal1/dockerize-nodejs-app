@@ -1,0 +1,8 @@
+version: '3'
+services:
+  web:
+    image: nodejs-app:1.4
+    ports:
+      - '3000:3000'  # Map your container's port 3000 to your host's port 5000
+    volumes:
+      - .:/app   # Mount your local code directory into the container at /app
